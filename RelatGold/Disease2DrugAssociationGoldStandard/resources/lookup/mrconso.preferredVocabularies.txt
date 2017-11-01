@@ -1,0 +1,13 @@
+C0000005|(131)I-Macroaggregated Albumin
+C0000005|(131)I-MAA
+C0000039|1,2-Dipalmitoylphosphatidylcholine
+C0000039|1,2 Dipalmitoylphosphatidylcholine
+C0000039|1,2-Dihexadecyl-sn-Glycerophosphocholine
+C0000039|1,2 Dihexadecyl sn Glycerophosphocholine
+C0000039|1,2-Dipalmitoyl-Glycerophosphocholine
+C0000039|1,2 Dipalmitoyl Glycerophosphocholine
+C0000039|Dipalmitoylphosphatidylcholine
+C0000039|Dipalmitoylglycerophosphocholine
+
+
+*****Execute ConceptMap/UMLSMetathesaurusCompiler/edu/uom/med/conceptsDictionaryGenerator/MRCONSOPreferredVocabularyGenerator.java to get the entire list of vocabularies marked as preferred in UMLS Metathesaurus and in English language. This is mandatory*****

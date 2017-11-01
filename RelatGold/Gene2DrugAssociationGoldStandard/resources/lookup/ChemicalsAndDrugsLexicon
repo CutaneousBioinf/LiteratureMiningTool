@@ -1,0 +1,14 @@
+131	i	macroaggregated	albumin|(131)I-Macroaggregated Albumin||CHEM|CD00000001_T116;CD00000001_T121;CD00000001_T130
+131	i	maa|(131)I-MAA||CHEM|CD00000001_T116;CD00000001_T121;CD00000001_T130
+1	2	dipalmitoylphosphatidylcholine|1,2-Dipalmitoylphosphatidylcholine||CHEM|CD00000002_T109;CD00000002_T121
+1	2	dipalmitoylphosphatidylcholine|1,2 Dipalmitoylphosphatidylcholine||CHEM|CD00000002_T109;CD00000002_T121
+1	2	dihexadecyl	sn	glycerophosphocholine|1,2-Dihexadecyl-sn-Glycerophosphocholine||CHEM|CD00000002_T109;CD00000002_T121
+1	2	dihexadecyl	sn	glycerophosphocholine|1,2 Dihexadecyl sn Glycerophosphocholine||CHEM|CD00000002_T109;CD00000002_T121
+1	2	dipalmitoyl	glycerophosphocholine|1,2-Dipalmitoyl-Glycerophosphocholine||CHEM|CD00000002_T109;CD00000002_T121
+1	2	dipalmitoyl	glycerophosphocholine|1,2 Dipalmitoyl Glycerophosphocholine||CHEM|CD00000002_T109;CD00000002_T121
+dipalmitoylphosphatidylcholine|Dipalmitoylphosphatidylcholine||CHEM|CD00000002_T109;CD00000002_T121
+dipalmitoylglycerophosphocholine|Dipalmitoylglycerophosphocholine||CHEM|CD00000002_T109;CD00000002_T121
+
+*****Refer to ConceptMap:UMLSMetathesaurusCompiler and DrugDict:DrugsDictionaryCompiler projects for generating a 
+chemicals/drugs lexicon from three resources namely UMLS Metathesaurus, DrugBank and PharmGKB. This 
+is mandatory*****

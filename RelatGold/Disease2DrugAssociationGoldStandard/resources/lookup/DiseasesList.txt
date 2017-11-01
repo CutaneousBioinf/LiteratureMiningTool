@@ -1,0 +1,13 @@
+Acne
+Acne NOS
+Zits
+Age related macular degeneration
+Degeneration Age-Related Macular
+Macular Degeneration Age-Related
+age related macular degeneration
+Degenerations Age-Related Macular
+Macular Degenerations Age-Related
+Age Related Macular Degenerations
+
+*****Execute Disease2rugMapper/edu/uom/med/diseaseDrugMapper/DiseaseCurator.java to get the entire
+list of diseases and their synonyms. This is mandatory***** 

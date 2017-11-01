@@ -1,0 +1,13 @@
+psoriasis|Psoriasis||DISO|C0033860_T047
+psoriasis|Psoriases||DISO|C0033860_T047
+psoriasi|psoriasi||DISO|C0033860_T047
+arthritis	psoriatic|Arthritis, Psoriatic||DISO|C0003872_T047
+psoriatic	arthritis|PSORIATIC ARTHRITIS||DISO|C0003872_T047
+arthritis	psoriatic|arthritis psoriatic||DISO|C0003872_T047
+arthritis	psoriatic|arthritis psoriatics||DISO|C0003872_T047
+psoriasis	arthropathica|Psoriasis Arthropathica||DISO|C0003872_T047
+psoriatic	arthropathy|Psoriatic Arthropathy||DISO|C0003872_T047
+arthropathy	psoriatic|Arthropathies, Psoriatic||DISO|C0003872_T047
+
+*****Separate disease concepts from UMLS Metathesaurus using semantic types related to diseases.
+Refer to UMLSMetathesaurusCompiler project for processing the resource. This is mandatory*****
