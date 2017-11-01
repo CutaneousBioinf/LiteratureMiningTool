@@ -1,0 +1,7 @@
+PMID	Sentence	Disease1_mapped	Disease2_mapped	Disease1_CUI	Disease2_CUI
+23624317	The results of our study indicate that anthropometric measurements, clinical and metabolic markers, adipokines (leptin and resistin), and inflammatory and cardiovascular disease risk biomarkers were generally elevated in the obese group. 	cardiovascular disease	obese	C0007222_T047	C0028754_T047
+23624317	Both rs16147 and rs16131 were associated with the risk of obesity, and the latter was also associated with insulin resistance, triacylglycerols, leptin, and HDL-c. 	obesity	insulin resistance	C0028754_T047	C0021655_T046
+23624366	Thrombocytopenia and leukopenia (any grade) were observed in 60 and 52% of patients, respectively. 	Thrombocytopenia	leukopenia	C0040034_T033	C0023530_T047
+23624446	The most common presenting symptoms were abdominal pain (87.5%), diarrhoea (75.0%) and weight loss (71.9%). 	abdominal pain	diarrhoea	C0000737_T184	C0011991_T184
+23624446	Extraintestinal manifestations such as fever and arthralgia were found in over 50% of patients. 	fever	arthralgia	C0015967_T033	C0003862_T184
+23624446	The most common physical findings were perianal abnormalities (56.3%), mouth ulcers (37.5%) and growth failure (15.6%). 	mouth ulcers	growth failure	C0149745_T047	C0015544_T047
