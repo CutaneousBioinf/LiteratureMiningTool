@@ -12,10 +12,12 @@ Prerequisites:
 ** The project requires a range of existing Java libraries: apache-logging-log4j.jar, commons-lang-2.3.jar, commons-logging-1.1.1.jar, org.apache.commons.io.jar, Stanford lexical parser and Apache Lucene (version 5.1.0 or above). You can download them from the respective contributor's URL and add to the project's build path.  
   
 ---- RUN IN AN IDE ----
+
 The entire project can be pulled into Java IDE, such as eclipse. You can compile the file Disease2DrugMapper/edu/uom/med/geneDrugMapper/GeneDrugMapper.java.
 
 
 ---- COMPILE AND RUN ON THE COMMAND LINE ----
+
 Mapping of genes and chemicals/drugs can be achieved with the following commands: 
 						
 						javac GeneDrugMapper.java 
@@ -33,6 +35,7 @@ Output: The output displays input sentences with the mapped genes (name / synony
 
 
 Java version used for development: JavaSE-1.8
+
 Authors: Kalpana Raja 
 Affiliation: Department of Dermatology, University of Michigan, Ann arbor 48019, MI, USA
 

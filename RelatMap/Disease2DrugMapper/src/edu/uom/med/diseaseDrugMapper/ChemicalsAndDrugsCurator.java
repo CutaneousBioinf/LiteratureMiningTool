@@ -34,7 +34,7 @@ public class ChemicalsAndDrugsCurator {
 		String line="";
 		
 		try {
-			FileReader fr = new FileReader("resources/lookup/ChemicalsAndDrugsDictionary_V3.0_MedTaggerFormat");
+			FileReader fr = new FileReader("resources/lookup/ChemicalsAndDrugsLexicon");
 			BufferedReader br = new BufferedReader(fr);
 			FileWriter fw = new FileWriter("resources/lookup/ChemicalsAndDrugsList.txt");
 			BufferedWriter bw = new BufferedWriter(fw);
@@ -68,7 +68,7 @@ public class ChemicalsAndDrugsCurator {
 		
 		long stopTime = System.currentTimeMillis();
 	    long elapsedTime = stopTime - startTime;
-	    System.out.println(elapsedTime);
+	    System.out.println("Execution time in milliseconds: " + elapsedTime);
 	}
 	
 }

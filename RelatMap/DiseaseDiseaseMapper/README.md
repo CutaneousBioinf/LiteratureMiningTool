@@ -13,10 +13,12 @@ download and installation of UMLS Metathesaurus.
   
 
 ---- RUN IN AN IDE ----
+
 The entire project should be pulled into Java IDE, such as eclipse. You can compile the file Disease2DiseaseMapper/edu/uom/med/diseaseDiseaseMapper/DiseaseDiseaseMapper.java. 
 
 
 ---- COMPILE AND RUN ON THE COMMAND LINE ----
+
 Mapping of diseases can be achieved with the following commands: 
 						
 						javac DiseaseDiseaseMapper.java
@@ -33,6 +35,7 @@ Output: The output displays the mapped disease, chemical/drug, disease CUI (from
 
 
 Java version used for development: JavaSE-1.8
+
 Author: Kalpana Raja PhD
 Affiliation: Department of Dermatology, University of Michigan, Ann arbor 48019, MI, USA
 

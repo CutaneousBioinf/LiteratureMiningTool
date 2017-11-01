@@ -24,6 +24,8 @@ public class DiseaseDictionaryGenerator {
 	 */
 	
 	public static void main(String[] args) {
+		long startTime = System.currentTimeMillis();
+
 		String line="";
 		int count=0;
 		
@@ -61,6 +63,10 @@ public class DiseaseDictionaryGenerator {
 		} catch (IOException ie) {
 			System.err.println(ie);
 		}
+
+		long stopTime = System.currentTimeMillis();
+	    long elapsedTime = stopTime - startTime;
+	    System.out.println("Execution time in milliseconds: " + elapsedTime);
 	}
 	
 }

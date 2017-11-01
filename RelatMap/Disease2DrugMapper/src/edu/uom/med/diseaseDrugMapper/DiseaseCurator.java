@@ -34,7 +34,7 @@ public class DiseaseCurator {
 		String line="";
 		
 		try {
-			FileReader fr = new FileReader("resources/lookup/mrconso.diseaseVocabularies43");
+			FileReader fr = new FileReader("resources/lookup/DiseasesLexicon");
 			BufferedReader br = new BufferedReader(fr);
 			FileWriter fw = new FileWriter("resources/lookup/DiseasesList.txt");
 			BufferedWriter bw = new BufferedWriter(fw);
@@ -68,7 +68,7 @@ public class DiseaseCurator {
 		
 		long stopTime = System.currentTimeMillis();
 		long elapsedTime = stopTime - startTime;
-		System.out.println(elapsedTime);
+		System.out.println("Execution time in milliseconds: " + elapsedTime);
 	}
 	
 }
