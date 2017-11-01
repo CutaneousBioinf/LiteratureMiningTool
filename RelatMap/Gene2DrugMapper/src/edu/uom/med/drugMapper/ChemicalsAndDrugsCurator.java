@@ -28,6 +28,8 @@ public class ChemicalsAndDrugsCurator {
 	 */
 	
 	public static void main(String[] args) {
+		long startTime = System.currentTimeMillis();
+
 		String line="";
 		
 		try {
@@ -62,7 +64,11 @@ public class ChemicalsAndDrugsCurator {
 			bw.close();
 		} catch(IOException e) {
 			System.err.println(e);
-		}	
+		}
+
+		long stopTime = System.currentTimeMillis();
+		long elapsedTime = stopTime - startTime;
+		System.out.println("Execution time in milliseconds: " + elapsedTime);	
 	}
 	
 }

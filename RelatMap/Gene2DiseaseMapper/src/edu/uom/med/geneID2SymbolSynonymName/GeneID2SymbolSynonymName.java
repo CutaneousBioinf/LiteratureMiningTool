@@ -30,9 +30,9 @@ public class GeneID2SymbolSynonymName {
 		String line="";
 		int count=0;
 		
-		String arg1 = args[0]; //input file - geneSymbolSynonyms_preprocessed
-		String arg2 = args[1]; //input file - gene2pubmed_Human_withAbstracts_1to5GeneMapping_sortedOnPubmed_pubmedGenecountGenelist.txt
-		String arg3 = args[2]; //output file - gene2pubmed_Human_withAbstracts_1to5GeneMapping_sortedOnPubmed_pubmedGenecountGenelist_ pubmedGenecountGenenamelist.txt
+		String arg1 = args[0]; //INPUT_FILE1 - geneSymbolSynonyms_preprocessed
+		String arg2 = args[1]; //INPUT_FILE2 - gene2pubmed_Human_withAbstracts_1to5GeneMapping_sortedOnPubmed_pubmedGenecountGenelist.txt
+		String arg3 = args[2]; //OUTPUT_FILE - gene2pubmed_Human_withAbstracts_1to5GeneMapping_sortedOnPubmed_pubmedGenecountGenelist_ pubmedGenecountGenenamelist.txt
 		
 		LinkedHashMap<String, String> geneInfo = new LinkedHashMap<String, String>(59930);
 		
@@ -86,7 +86,7 @@ public class GeneID2SymbolSynonymName {
 		
 		long stopTime = System.currentTimeMillis();
 	    long elapsedTime = stopTime - startTime;
-	    System.out.println(elapsedTime);
+	    System.out.println("Execution time in milliseconds: " + elapsedTime);
 	}
 	
 }

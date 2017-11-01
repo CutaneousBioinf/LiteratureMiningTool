@@ -31,27 +31,26 @@ public class GeneDistributionTester {
 	 */
 	
 	public static void main(String[] args) {
-		
 		long startTime = System.currentTimeMillis();
 		
 		///////////filter gene2pubmed_Human file based on PubMed with abstracts information///////////
-		String arg1 = args[0]; //input file
-		String arg2 = args[1]; //input file
-		String arg3 = args[2]; //output file
+		String arg1 = args[0]; //INPUT_FILE1 -- PMIDs_from_gene2pubmed_human_hasAbstract
+		String arg2 = args[1]; //INPUT_FILE2 -- gene2pubmed_human
+		String arg3 = args[2]; //OUTPUT_FILE
 		gene2PubmedHumanWithAbstracts(arg1, arg2, arg3);
 				
 		///////////Count genes for every PMIDs///////////
-		//String arg1 = args[0]; //input file
-		//String arg2 = args[1]; //output file
-		//pubmed2geneCount(arg1, arg2);
+		/*String arg1 = args[0]; //INPUT_FILE
+		String arg2 = args[1]; //OUTPUT_FILE
+		pubmed2geneCount(arg1, arg2);*/
 		
 		long stopTime = System.currentTimeMillis();
   		long elapsedTime = stopTime - startTime;
-  		System.out.println("Execution time: "+elapsedTime);
+  		System.out.println("Execution time in milliseconds: "+elapsedTime);
 	}
 	
 	/**
-	 * Method to filter gene2pubmed records (related to human) with abstract
+	 * Method to filter gene2pubmed records (related to human) with abstract 
 	 * 
 	 * @param arg1
 	 * @param arg2

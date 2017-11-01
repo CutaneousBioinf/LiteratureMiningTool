@@ -29,15 +29,18 @@ public class GeneIDtoSymbolMapping {
 	 */
 	
 	public static void main(String[] args) {
-		
 		long startTime = System.currentTimeMillis();
+
+		String arg1 = args[0]; //INPUT_FILE1 -- Homo_sapiens.gene_info
+		String arg2 = args[1]; //INPUT_FILE2 -- pubmed_gene_disease_mapping_43diseasesUnderStudy
+		String arg3 = args[2]; //OUTPUT_FILE -- pubmed_geneID_symbol_disease
 
 		String line="";
 		
 		HashMap<String, String> geneIDSymbol = new LinkedHashMap<String, String>();
 		
 		try {
-			FileInputStream fis = new FileInputStream("/net/psoriasis/home/rkalpana/Projects/Complex_Traits_50/Gene_Drug_Mapping/Step_2_geneSymbol/Entrez_Gene_Resource/Homo_sapiens.gene_info");
+			FileInputStream fis = new FileInputStream(arg1);
 			InputStreamReader isr = new InputStreamReader(fis,"UTF-8");
 		    	BufferedReader br = new BufferedReader(isr);
 		         
@@ -48,15 +51,15 @@ public class GeneIDtoSymbolMapping {
 				}
 			}
 			
-			FileInputStream fis1 = new FileInputStream("/net/psoriasis/home/rkalpana/Projects/Complex_Traits_50/Gene_Disease_Mapping/Step_3_gene_disease_mapping/pubmed_gene_disease_mapping_43diseases.txt");
+			FileInputStream fis1 = new FileInputStream(arg2);
 			InputStreamReader isr1 = new InputStreamReader(fis1,"UTF-8");
-		    	BufferedReader br1 = new BufferedReader(isr1);
+		    BufferedReader br1 = new BufferedReader(isr1);
 		    
-		    	FileOutputStream fos = new FileOutputStream("pubmed_geneID_symbol_disease_mapping_43diseases.txt");
-		    	OutputStreamWriter osr = new OutputStreamWriter(fos, "UTF-8");
-		    	BufferedWriter bw = new BufferedWriter(osr);
+		    FileOutputStream fos = new FileOutputStream(arg3);
+		    OutputStreamWriter osr = new OutputStreamWriter(fos, "UTF-8");
+		    BufferedWriter bw = new BufferedWriter(osr);
 
-		    	while((line=br1.readLine()) != null) {
+		    while((line=br1.readLine()) != null) {
 				String[] arrLine = line.split("\t");
 				String geneSymbol = geneIDSymbol.get(arrLine[1]);
 				bw.append(arrLine[0] + "\t" + arrLine[1] + "\t" + geneSymbol + "\t" + arrLine[2]);

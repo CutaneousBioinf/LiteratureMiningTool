@@ -8,7 +8,7 @@ Prerequisites:
 https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/ for license requirement, 
 download and installation of UMLS Metathesaurus.
 ** The project also requires a local version of PubMed database (refer ConceptMap:LocalPubmedDatabaseCompiler and ConceptMap:PubMedXMLParser for related Java codes). 
-** MedTagger is required for executing the code and it has to be merged with our Java code (e.g. src/edu/mayo/nlp/). MedTagger is meant for indexing biomedical concepts (e.g. disease, chemical, drug) based on a lexicon and is distributed as an Open health Natural Language Processing project (OHNLP). 
+** MedTagger is required for executing the code and it has to be merged with our Java code (e.g. src/edu/mayo/nlp/). MedTagger is meant for indexing biomedical concepts (e.g. disease, chemical, drug) based on a lexicon and distributed as an Open health Natural Language Processing project (OHNLP). 
 ** The project requires a range of existing Java libraries: apache-logging-log4j.jar, commons-lang-2.3.jar, commons-logging-1.1.1.jar, org.apache.commons.io.jar, Stanford lexical parser and Apache Lucene (version 5.1.0 or above). You can download them from the respective contributor's URL and add to the project's build path.  
   
 

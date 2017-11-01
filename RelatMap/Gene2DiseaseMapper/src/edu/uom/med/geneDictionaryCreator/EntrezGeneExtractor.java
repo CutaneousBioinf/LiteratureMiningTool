@@ -35,8 +35,8 @@ public class EntrezGeneExtractor {
 		String line="";
 		int count=0;
 		
-		String arg1 = args[0]; // input file -- Homo_sapiens.gene_info
-		String arg2 = args[1]; // output file -- geneSymbolSynonyms-Entrez		
+		String arg1 = args[0]; //INPUT_FILE -- Homo_sapiens.gene_info
+		String arg2 = args[1]; //OUTPUT_FILE 		
 		
 		try {
 			FileInputStream fis = new FileInputStream(arg1);
@@ -70,7 +70,7 @@ public class EntrezGeneExtractor {
 		
 		long stopTime = System.currentTimeMillis();
 	    long elapsedTime = stopTime - startTime;
-	    System.out.println(elapsedTime);
+	    System.out.println("Execution time in milliseconds: " + elapsedTime);
 	}
 	
 }

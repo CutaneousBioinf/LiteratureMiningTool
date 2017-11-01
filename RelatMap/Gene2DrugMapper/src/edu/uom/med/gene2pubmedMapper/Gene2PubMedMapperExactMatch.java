@@ -40,10 +40,10 @@ public class Gene2PubMedMapperExactMatch {
 		LinkedHashMap<String, String> geneInformation = new LinkedHashMap<String, String>();
 		ArrayList<String> sentences = new ArrayList<String>();
 		
-		String arg1 = args[0]; //input file --gene2pubmed_Human_withAbstracts_1to5GeneMapping_sortedOnPubmed_pubmedGenecountGenelist_pubmedGenecountGenenamelist.txt 
-		String arg2 = args[1]; //input file -- pubmedSentencesaa_output.txt (multiple jobs - 4 more input files are there)
-		String arg3 = args[2]; //output file -- pubmedSentencesaa_output_genesMapped_output.txt
-		String arg4 = args[3]; //output file -- mappingResult_aa.txt
+		String arg1 = args[0]; //input file --gene2pubmed_human_hasAbstract_1to5GeneMapping_sortedOnPubmed_pubmedGenecountGenelist_pubmedGenecountGenenamelist 
+		String arg2 = args[1]; //input file -- pubmedSentences
+		String arg3 = args[2]; //output file -- pubmedSentences_genesMapped
+		String arg4 = args[3]; //output file -- mapping_count
 		
 		try {
 			FileInputStream fis0 = new FileInputStream(arg1);

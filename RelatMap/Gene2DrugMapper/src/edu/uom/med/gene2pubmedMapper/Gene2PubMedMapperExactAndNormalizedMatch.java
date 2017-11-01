@@ -56,15 +56,15 @@ public class Gene2PubMedMapperExactAndNormalizedMatch {
 		LinkedHashMap<String, String> geneInformation = new LinkedHashMap<String, String>();
 		ArrayList<String> sentences = new ArrayList<String>();
 		
-		String arg1 = args[0]; //input file --gene2pubmed_Human_withAbstracts_1to5GeneMapping_sortedOnPubmed_pubmedGenecountGenelist_pubmedGenecountGenenamelist.txt 
-		String arg2 = args[1]; //input file -- pubmedSentencesaa_output.txt (multiple jobs - 4 more input files are there)
-		String arg3 = args[2]; //output file -- pubmedSentencesaa_output_genesMapped_output.txt
-		String arg4 = args[3]; //output file -- mappingResult_aa.txt
+		String arg1 = args[0]; //INPUT_FILE1 --gene2pubmed_human_hasAbstract_1to5GeneMapping_sortedOnPubmed_pubmedGenecountGenelist_pubmedGenecountGenenamelist 
+		String arg2 = args[1]; //INPUT_FILE2 -- pubmedSentences (multiple jobs - 4 more input files are there)
+		String arg3 = args[2]; //OUTPUT_FILE1 -- pubmedSentences_genesMapped
+		String arg4 = args[3]; //OUTPUT_FILE2 -- mapping_count
 		
 		stopWords = stopwordsRemover.getStopwords();
 		
 		try { 
-			FileReader fr = new FileReader("/net/psoriasis/home/rkalpana/Projects/Complex_Traits_50/Java_Applications/Input/Gene_Drug_Mapping/UK_and_US_Spelling_Equivalents.txt");
+			FileReader fr = new FileReader("resources/lookup/UK_and_US_Spelling_Equivalents.txt");
 			BufferedReader br = new BufferedReader(fr);
 			while((line = br.readLine()) != null) {
 				String[] arrLine = line.split("\t");
@@ -77,7 +77,7 @@ public class Gene2PubMedMapperExactAndNormalizedMatch {
 		}
 		
 		try { 
-			FileReader fr = new FileReader("/net/psoriasis/home/rkalpana/Projects/Complex_Traits_50/Java_Applications/Input/Gene_Drug_Mapping/roman_numerals.txt");
+			FileReader fr = new FileReader("resources/lookup/roman_numerals.txt");
 			BufferedReader br = new BufferedReader(fr);
 			while((line = br.readLine()) != null) {
 				romanNumerals.add(line.trim());

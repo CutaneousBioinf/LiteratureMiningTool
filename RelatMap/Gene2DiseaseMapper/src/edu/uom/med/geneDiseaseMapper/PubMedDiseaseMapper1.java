@@ -26,21 +26,26 @@ public class PubMedDiseaseMapper1 {
 	public static void main(String[] args) {
 		long startTime = System.currentTimeMillis();
 
+		String arg1 = args[0]; //INPUT_FILE1 -- pubmed_disease_mapping_43diseasesUnderStudy
+		String arg2 = args[1]; //INPUT_FILE2 -- pubmed_with_disease_gene_mapping_43diseasesUnderStudy
+		String arg3 = args[2]; //OUTPUT_FILE -- pubmed_disease_mapping_restrictedTo1to5genes_43diseasesUnderStudy
+
+
 		String line="";
 		int count=0, count1=0;
 		
 		ArrayList<String> pubmed2disease = new ArrayList<String>();
 		
 		try {
-			FileReader fr0 = new FileReader("pubmed_disease_mapping_43diseases.txt"); //43 diseases
+			FileReader fr0 = new FileReader(arg1); 
 			BufferedReader br0 = new BufferedReader(fr0);
 			while((line=br0.readLine()) != null) {
 				pubmed2disease.add(line);
 			}
 			
-			FileReader fr = new FileReader("pubmed_with_disease_gene_mapping_43diseases"); //43 diseases
+			FileReader fr = new FileReader(arg2); 
 			BufferedReader br = new BufferedReader(fr);
-			FileWriter fw = new FileWriter("/net/psoriasis/home/rkalpana/Projects/Complex_Traits_50/Gene_Disease_Mapping/Step_2_processing/pubmed_disease_mapping_restrictedTo1to5genes_43diseases.txt"); //43 diseases
+			FileWriter fw = new FileWriter(arg3);
 			BufferedWriter bw = new BufferedWriter(fw);
 			while((line=br.readLine()) != null) {
 				for(String each : pubmed2disease) {
@@ -48,7 +53,7 @@ public class PubMedDiseaseMapper1 {
 						String[] arrEach = each.split("\t");
 						if(arrEach[0].trim().equals(line.trim())) {
 							String disease = arrEach[1];
-							//System.out.println(line+"\t"+disease);
+							
 							bw.append(line+"\t"+disease);
 							bw.append("\n");
 						
@@ -74,7 +79,7 @@ public class PubMedDiseaseMapper1 {
 
 		long stopTime = System.currentTimeMillis();
 		long elapsedTime = stopTime - startTime;
-		System.out.println("Execution time: "+elapsedTime);
+		System.out.println("Execution time in milliseconds: "+elapsedTime);
 	}
 	
 }

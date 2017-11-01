@@ -27,21 +27,25 @@ public class PubMedGeneMapper {
 	public static void main(String[] args) {
 		long startTime = System.currentTimeMillis();
 
+		String arg1 = args[0]; //INPUT_FILE1 -- gene2pubmed_Human_1to5GeneMapping
+		String arg2 = args[1]; //INPUT_FILE2 -- pubmed_with_disease_gene_mapping_43diseasesUnderStudy
+		String arg3 = args[2]; //OUTPUT_FILE -- pubmed_gene_mapping_restrictedTo1to5genes_43diseasesUnderStudy
+
 		String line="";
 		int count=0, count1=0;
 		
 		ArrayList<String> gene2pubmedHuman = new ArrayList<String>();
 		
 		try {
-			FileReader fr0 = new FileReader("gene2pubmed_Human_1to5GeneMapping");
+			FileReader fr0 = new FileReader(arg1);
 			BufferedReader br0 = new BufferedReader(fr0);
 			while((line=br0.readLine()) != null) {
 				gene2pubmedHuman.add(line);
 			}
 			
-			FileReader fr = new FileReader("pubmed_with_disease_gene_mapping_43diseases");
+			FileReader fr = new FileReader(arg2);
 			BufferedReader br = new BufferedReader(fr);
-			FileWriter fw = new FileWriter("/net/psoriasis/home/rkalpana/Projects/Complex_Traits_50/Gene_Disease_Mapping/Step_2_processing/pubmed_gene_mapping_restrictedTo1to5genes_43diseases.txt");
+			FileWriter fw = new FileWriter(arg3);
 			BufferedWriter bw = new BufferedWriter(fw);
 			while((line=br.readLine()) != null) {
 				for(String each : gene2pubmedHuman) {
@@ -74,7 +78,7 @@ public class PubMedGeneMapper {
 
 		long stopTime = System.currentTimeMillis();
 		long elapsedTime = stopTime - startTime;
-		System.out.println("Execution time: "+elapsedTime);
+		System.out.println("Execution time in milliseconds: "+elapsedTime);
 	}
 	
 }

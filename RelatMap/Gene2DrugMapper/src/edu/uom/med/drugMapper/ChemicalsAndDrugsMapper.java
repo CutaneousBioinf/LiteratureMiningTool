@@ -42,8 +42,8 @@ public class ChemicalsAndDrugsMapper {
 		String line="", line1="";
 		int count=0, count1=0;
 		
-		String arg1 = args[0]; //input file -- PMID\tsentence format
-		String arg2 = args[1]; //output file
+		String arg1 = args[0]; //INPUT_FILE -- PMID\tsentence format
+		String arg2 = args[1]; //OUTPUT_FILE
 	
 		try {
 			FileReader fr00 = new FileReader("resources/lookup/ChemicalsAndDrugsList.txt");

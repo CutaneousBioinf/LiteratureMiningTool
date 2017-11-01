@@ -45,7 +45,6 @@ public class DiseaseDrugMapper {
 	 */
 	
 	public static void main(String[] args) {
-		
 		long startTime = System.currentTimeMillis();
 		
 		String line="", line1="";
@@ -53,8 +52,8 @@ public class DiseaseDrugMapper {
 		
 		ArrayList<String> allSentences = new ArrayList<String>();
 		
-		String arg1 = args[0]; //input file -- PMID_sentences.txt
-		String arg2 = args[1]; //output file
+		String arg1 = args[0]; //INPUT_FILE -- PMID_sentences.txt
+		String arg2 = args[1]; //OUTPUT_FILE
 		
 		try {
 			FileReader fr00 = new FileReader("resources/lookup/ChemicalsAndDrugsList.txt");

@@ -30,8 +30,8 @@ public class PubMed2GeneSymbols {
 		String line="";
 		int count=0;
 		
-		String arg1 = args[0]; //input file - pubmedGeneSymbolSynonymName.txt
-		String arg2 = args[1]; //output file - pubmedGeneSymbol.txt
+		String arg1 = args[0]; //INPUT_FILE - pubmedGeneSymbolSynonymName.txt
+		String arg2 = args[1]; //OUTPUT_FILE - pubmedGeneSymbol.txt
 		
 		try {
 			FileReader fr = new FileReader(arg1);
@@ -74,7 +74,7 @@ public class PubMed2GeneSymbols {
 		
 		long stopTime = System.currentTimeMillis();
 		long elapsedTime = stopTime - startTime;
-		System.out.println("Execution time: "+elapsedTime);
+		System.out.println("Execution time in milliseconds: "+elapsedTime);
 	}
 
 }

@@ -28,7 +28,7 @@ public class PMIDWith1to5Genes {
 		
 		String line="";
 		
-		String arg1 = args[0]; //input file
+		String arg1 = args[0]; //INPUT_FILE -- gene2pubmed_human_hasAbstract_PMIDMapsTo1to5genes
 		String arg2 = args[1]; //output file
 		
 		try {
@@ -52,7 +52,7 @@ public class PMIDWith1to5Genes {
 		
 		long stopTime = System.currentTimeMillis();
 		long elapsedTime = stopTime - startTime;
-		System.out.println("Execution time (in milliseconds): "+elapsedTime);
+		System.out.println("Execution time in milliseconds: "+elapsedTime);
 	}
 	
 }

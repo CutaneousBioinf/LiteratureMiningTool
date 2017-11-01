@@ -8,7 +8,7 @@ Prerequisites:
 ** Chemical/drug lexicon is required to run the project. The lexicon can be compiled from three resources namely UMLS Metathesaurus, DrugBank and PharmGKB (refer DrugDict:DrugsDictionaryCompiler and ConceptMap:UMLSMetathesaurusCompiler for related Java codes).
 ** We use gene2pubmed resource from NCBI for mapping genes. Please refer to gene2pubmedMapper package within Gene2DrugMapper project for processing the resource.  
 ** The project also requires a local version of PubMed database (refer ConceptMap:LocalPubmedDatabaseCompiler and ConceptMap:PubMedXMLParser for related Java codes). 
-** MedTagger is required for executing the code and it has to be merged with our Java code (e.g. src/edu/mayp/nlp/). MedTagger is meant for indexing biomedical concepts (e.g. disease, chemical, drug) based on a lexicon and is distributed as an Open health Natural Language Processing project (OHNLP). 
+** MedTagger is required for executing the code and it has to be merged with our Java code (e.g. src/edu/mayp/nlp/). MedTagger is meant for indexing biomedical concepts (e.g. disease, chemical, drug) based on a lexicon and distributed as an Open health Natural Language Processing project (OHNLP). 
 ** The project requires a range of existing Java libraries: apache-logging-log4j.jar, commons-lang-2.3.jar, commons-logging-1.1.1.jar, org.apache.commons.io.jar, Stanford lexical parser and Apache Lucene (version 5.1.0 or above). You can download them from the respective contributor's URL and add to the project's build path.  
   
 ---- RUN IN AN IDE ----

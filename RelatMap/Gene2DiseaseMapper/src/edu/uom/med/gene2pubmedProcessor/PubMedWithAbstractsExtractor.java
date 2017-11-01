@@ -43,7 +43,7 @@ public class PubMedWithAbstractsExtractor {
 		String line="";
 		int count=0;
 		
-		String arg1 = args[0]; // input file 
+		String arg1 = args[0]; //INPUT_FILE -- PMIDs_from_gene2pubmed_human 
 		String arg2 = args[1]; // output file 
 		
 		ArrayList<Integer> pubmedIDList = new ArrayList<Integer>();
@@ -78,7 +78,7 @@ public class PubMedWithAbstractsExtractor {
 		
 		long stopTime = System.currentTimeMillis();
 	    long elapsedTime = stopTime - startTime;
-	    System.out.println("Execution time:"+elapsedTime);
+	    System.out.println("Execution time in milliseconds:"+elapsedTime);
 	}
 	
 	/**

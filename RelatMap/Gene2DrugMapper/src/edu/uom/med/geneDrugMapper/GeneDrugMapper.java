@@ -40,7 +40,6 @@ public class GeneDrugMapper {
 	 */
 	
 	public static void main(String[] args) {
-		
 		long startTime = System.currentTimeMillis();
 		
 		chemicalsList = getChemicalsList();
@@ -48,8 +47,8 @@ public class GeneDrugMapper {
 		String line="", pmid="", sentence="", genesMapped="", geneSymbol="";
 		int count=0;
 		
-		String arg1 = args[0]; //input file -- pubmedSentencesaa_output_genesMapped_output.txt (multiple jobs - 4 more input files are there)
-		String arg2 = args[1]; //output file -- pubmedSentencesaa_output_genes_chemicalsAndDrugs_Mapped_output.txt
+		String arg1 = args[0]; //INPUT_FILE -- pubmedSentences_genesMapped
+		String arg2 = args[1]; //OUTPUT_FILE -- pubmedSentencesaa_genes_chemicalsAndDrugs_Mapped
 		
 		try {
 			FileInputStream fis = new FileInputStream(arg1);
@@ -195,8 +194,7 @@ public class GeneDrugMapper {
 		String line="";
 		
 		try {
-			FileReader fr = new FileReader("/net/psoriasis/home/rkalpana/Projects/Complex_Traits_50/Disease_Drug_Mapping/Step_3_disease_drug_mapping/Input/ChemicalsAndDrugsList.txt");
-			//FileReader fr = new FileReader("resources/lookup/ChemicalsAndDrugsList.txt");
+			FileReader fr = new FileReader("resources/lookup/ChemicalsAndDrugsList.txt");
 			BufferedReader br = new BufferedReader(fr);
 			while((line = br.readLine())!=null) { 
 				chemicalsList.add(line); 

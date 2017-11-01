@@ -24,15 +24,14 @@ public class SubsetPubMedWith1to5Genes {
 	 */
 	
 	public static void main(String[] args) {
-		
 		long startTime = System.currentTimeMillis();
 		
 		String line="";
 		int count=0;
 		
-		String arg1 = args[0]; //input file - pubmedGeneSymbolSynonymName.txt
-		String arg2 = args[1]; //input file - PubMedWith1to5Genes.txt
-		String arg3 = args[2]; //output file - pubmedGeneSymbolSynonymName1to5.txt
+		String arg1 = args[0]; //INPUT_FILE1 - pubmedGeneSymbolSynonymName.txt
+		String arg2 = args[1]; //INPUT_FILE2 - PubMedWith1to5Genes.txt
+		String arg3 = args[2]; //OUTPUT_FILE - pubmedGeneSymbolSynonymName1to5.txt
 		
 		ArrayList<String> geneInfo = new ArrayList<String>();
 		ArrayList<String> pubmedList = new ArrayList<String>();
@@ -81,7 +80,7 @@ public class SubsetPubMedWith1to5Genes {
 		
 		long stopTime = System.currentTimeMillis();
 	    long elapsedTime = stopTime - startTime;
-	    System.out.println(elapsedTime);
+	    System.out.println("Execution time in milliseconds: " + elapsedTime);
 	}
 	
 }

@@ -31,15 +31,15 @@ public class PubMed2GeneCounterForPubMedWithAbstracts1to5GeneMapping {
 	public static void main(String[] args) {
 		long startTime = System.currentTimeMillis();
 		
-		String arg1 = args[0]; //input file - gene2pubmed_Human_withAbstracts_1to5GeneMapping_sortedOnPubmed.txt
-		String arg2 = args[1]; //output file - gene2pubmed_Human_withAbstracts_1to5GeneMapping_sortedOnPubmed_pubmedGenecountGenelist.txt
+		String arg1 = args[0]; //INPUT_FILE - gene2pubmed_Human_withAbstracts_1to5GeneMapping_sortedOnPubmed.txt
+		String arg2 = args[1]; //OUTPUT_FILE - gene2pubmed_Human_withAbstracts_1to5GeneMapping_sortedOnPubmed_pubmedGenecountGenelist.txt
 		
 		//Count genes for every PMIDs
 		pubmed2geneCount(arg1, arg2);
 		
 		long stopTime = System.currentTimeMillis();
 		long elapsedTime = stopTime - startTime;
-		System.out.println("Execution time: "+elapsedTime);
+		System.out.println("Execution time in milliseconds: "+elapsedTime);
 	}
 	
 	/**

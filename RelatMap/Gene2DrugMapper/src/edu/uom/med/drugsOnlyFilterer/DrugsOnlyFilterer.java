@@ -26,22 +26,27 @@ public class DrugsOnlyFilterer {
 	 */
 	
 	public static void main(String[] args) {
+		long startTime = System.currentTimeMillis();
+		
+		String arg1 = args[0]; //INPUT_FILE -- PMIDsentences_mapped_with_genes_and_ChemicalsAndDrugs
+		String arg2 = args[1]; //OUTPUT_FILE -- PMIDsentences_mapped_with_genes_and_DrugsOnly
+
 		String line="";
 		
 		try {
-			FileInputStream fis = new FileInputStream("pubmedSentences_all_genes_chemicalsAndDrugs_Mapped_output.txt");
+			FileInputStream fis = new FileInputStream(arg1);
 			InputStreamReader isr = new InputStreamReader(fis,"UTF-8");
 		    BufferedReader br = new BufferedReader(isr);
 		         
-		    FileOutputStream fos = new FileOutputStream("pubmedSentences_all_genes_drugs_Mapped_output.txt");
+		    FileOutputStream fos = new FileOutputStream(arg2);
 		    OutputStreamWriter osr = new OutputStreamWriter(fos, "UTF-8");
 		    BufferedWriter bw = new BufferedWriter(osr);
 		       
 			while((line = br.readLine()) != null) {
 				String[] arrLine = line.split("\t");
-				if(!arrLine[5].contains("_T195") && //Antibiotics 
-						!arrLine[5].contains("_T200") && //Clinical drugs
-						!arrLine[5].contains("_T121")) continue; //Pharmacologically active substances
+				if(!arrLine[5].contains("_T195") && 				//Antibiotics 
+						!arrLine[5].contains("_T200") && 		 	//Clinical drugs
+						!arrLine[5].contains("_T121")) continue; 	//Pharmacologically active substances
 				
 				bw.append(line);
 				bw.append("\n");
@@ -51,6 +56,10 @@ public class DrugsOnlyFilterer {
 		} catch(IOException e) {
 			System.err.println(e);
 		}
+
+		long stopTime = System.currentTimeMillis();
+		long elapsedTime = stopTime - startTime;
+		System.out.println("Execution time in milliseconds: " + elapsedTime);
 	}
 	
 }

@@ -38,22 +38,22 @@ Disease mapping:
 To assign disease names for all PMIDs: 
 
 							javac PubMedDiseaseMapper.java
-							java PubMedDiseaseMapper
+							java PubMedDiseaseMapper INPUT_FOLDER OUTPUT_FILE INPUT_FILE
 
 To filter PubMed to Disease mapping for the list of PMIDs with up to 5 genes
 							
 							javac PubMedDiseaseMapper1.java
-							java PubMedDiseaseMapper1
+							java PubMedDiseaseMapper1 NPUT_FILE1 INPUT_FILE2 OUTPUT_FILE
 
 Gene mapping: 
 
 							javac PubMedGeneMapper.java
-							java PubMedGeneMapper
+							java PubMedGeneMapper INPUT_FILE1 INPUT_FILE2 OUTPUT_FILE
 
 Disease-Gene mapping:
 
 							javac GeneDiseaseMapper.java
-							java GeneDiseaseMapper
+							java GeneDiseaseMapper INPUT_FILE1 INPUT_FILE2 OUTPUT_FILE
 
 *****************************************************************************
 
@@ -62,7 +62,7 @@ Step 5: Post-processing (path: src/edu/uom/med/geneDiseaseMapper/)
 Gene ID to Gene symbol mapping:
 
 							javac GeneIDtoSymbolMapping.java
-							java GeneIDtoSymbolMapping
+							java GeneIDtoSymbolMapping INPUT_FILE1 INPUT_FILE2 OUTPUT_FILE
 
 *****************************************************************************
 

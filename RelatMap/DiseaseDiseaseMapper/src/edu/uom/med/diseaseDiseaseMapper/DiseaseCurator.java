@@ -34,9 +34,9 @@ public class DiseaseCurator {
 		String line="";
 		
 		try {
-			FileReader fr = new FileReader("resources/lookup/mrconso.diseaseVocabularies2016AA.txt");
+			FileReader fr = new FileReader("resources/lookup/DiseasesLexicon");
 			BufferedReader br = new BufferedReader(fr);
-			FileWriter fw = new FileWriter("resources/lookup/DiseasesList_2016.txt");
+			FileWriter fw = new FileWriter("resources/lookup/DiseasesList.txt");
 			BufferedWriter bw = new BufferedWriter(fw);
 			
 			while((line = br.readLine())!=null) {
@@ -49,7 +49,7 @@ public class DiseaseCurator {
 				}
 				
 				if(!diseasesList.contains(arrLine[1])) {
-					diseasesList.add(arrLine[1]); //(arrLine[1].toLowerCase());
+					diseasesList.add(arrLine[1]); 
 				}
 				System.out.println(arrLine[1]);
 			}
@@ -69,7 +69,7 @@ public class DiseaseCurator {
 		
 		long stopTime = System.currentTimeMillis();
 		long elapsedTime = stopTime - startTime;
-		System.out.println(elapsedTime);
+		System.out.println("Execution time in milliseconds: " + elapsedTime);
 	}
 	
 }

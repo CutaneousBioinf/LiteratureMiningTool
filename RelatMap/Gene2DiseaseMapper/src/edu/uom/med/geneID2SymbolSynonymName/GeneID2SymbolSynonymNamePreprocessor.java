@@ -37,8 +37,8 @@ public class GeneID2SymbolSynonymNamePreprocessor {
 		String line="", name="";
 		int count=0;
 		
-		String arg1 = args[0]; //input file - geneSymbolSynonyms-Entrez
-		String arg2 = args[1]; //output file - geneSymbolSynonymsProcessed
+		String arg1 = args[0]; //INPUT_FILE - geneSymbolSynonyms-Entrez
+		String arg2 = args[1]; //OUTPUT_FILE - geneSymbolSynonymsProcessed
 		
 		try {
 			FileInputStream fis = new FileInputStream(arg1);
@@ -74,7 +74,7 @@ public class GeneID2SymbolSynonymNamePreprocessor {
 		
 		long stopTime = System.currentTimeMillis();
 	    long elapsedTime = stopTime - startTime;
-	    System.out.println(elapsedTime);
+	    System.out.println("Execution time in milliseconds: " + elapsedTime);
 	}
 	
 }

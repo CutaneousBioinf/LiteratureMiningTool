@@ -28,12 +28,14 @@ public class Gene2PubMedHumanWithAbstractsAnd1to5Genes {
 	 */
 	
 	public static void main(String[] args) {
+		long startTime = System.currentTimeMillis();
+
 		String line="";
 		int count=0;
 		
-		String arg1 = args[0]; //input file 
-		String arg2 = args[1]; //input file 
-		String arg3 = args[2]; //output file 
+		String arg1 = args[0]; //INPUT_FILE1 -- gene2pubmed_human_hasAbstract_PMIDMapsTo1to5genes
+		String arg2 = args[1]; //INPUT_FILE2 -- gene2pubmed_human
+		String arg3 = args[2]; //OUTPUT_FILE 
 		
 		ArrayList<String> pmids = new ArrayList<String>();
 		
@@ -71,6 +73,10 @@ public class Gene2PubMedHumanWithAbstractsAnd1to5Genes {
 		} catch(IOException e) {
 			System.err.println(e);
 		}
+
+		long stopTime = System.currentTimeMillis();
+		long elapsedTime = stopTime - startTime;
+		System.out.println("Execution time in milliseconds: " + elapsedTime);
 	}
 	
 }
