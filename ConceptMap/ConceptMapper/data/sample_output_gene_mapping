@@ -1,0 +1,9 @@
+PMID	Sentence	Gene_mapped	Gene_Symbol
+10359813	In short-term drug exposure experiments MRP3 also confers high-level resistance to methotrexate.	MRP3	ABCC3
+10446858	Selective expression of folate receptor beta and its possible role in methotrexate transport in synovial macrophages from patients with rheumatoid arthritis.	folate receptor beta	FOLR2
+11027569	We cultured the recombinant cells in media with progressively increasing concentrations of methotrexate and found that human GAA enzyme activity increased to over 2000 IU per gram protein.	GAA	GAA
+11375950	We also established a permanent cell line that consistently expresses LST-2 to examine the relationship between methotrexate uptake and sensitivity.	LST-2	SLCO1B3
+11375950	LST-2 transports methotrexate in a saturable and dose-dependent manner.	LST-2	SLCO1B3
+11375950	Furthermore introduction of the LST-2 gene into mammalian cells potentiates sensitivity to methotrexate.	LST-2	SLCO1B3
+11375950	LST-2 is one of the prime candidate molecules for determining methotrexate sensitivity and may be a good target to deliver anticancer drugs to the gastrointestinal cancers.	LST-2	SLCO1B3
+12812497	The cell-permeable dihydrofolate reductase inhibitor methotrexate was covalently linked to a ligand for the protein FKBP to create a bifunctional molecule called MTXSLF.	dihydrofolate reductase	DHFR

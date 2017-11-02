@@ -1,0 +1,13 @@
+(131)I Macroaggregated Albumin
+(131)I MAA
+12-Dipalmitoylphosphatidylcholine
+12 Dipalmitoylphosphatidylcholine
+12-Dihexadecyl-sn-Glycerophosphocholine
+12 Dihexadecyl sn Glycerophosphocholine
+12-Dipalmitoyl-Glycerophosphocholine
+12 Dipalmitoyl Glycerophosphocholine
+Dipalmitoylphosphatidylcholine
+Dipalmitoylglycerophosphocholine
+
+*****Execute Disease2rugMapper/edu/uom/med/diseaseDrugMapper/ChemicalsAndDrugsCurator.java to get 
+the entire list of diseases and their synonyms. This is mandatory*****
