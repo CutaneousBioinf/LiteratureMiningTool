@@ -1,1 +1,11 @@
-# LiteratureMiningTool
+LiteratureMiningTools is a collection of text-ming projects to support the challenges in biomedical domain. 
+
+
+ConceptMap: The project includes Java programs for processing UMLS Metathesaurus, PubMed retrieval and mapping of biomedical concepts such as genes, drugs and diseases in unstructured text. For mapping the genes, our approach uses gene2pubmed from NCBI. This resource annotates genes for PubMed ID (PMID). The mapping is carried out in two stages: (i) exact mapping where the gene name/alias/symbol matches exactly between the resource and gene mention in the text; (ii) mapping by normalizing the gene name/aliases when variations such as case (e.g. caspace 3 vs. CASPASE 3), and presence of extra characters (e.g. IL 7 vs. IL-7), are observed. Mapping of drugs and diseases is achieved with dictionary lookup. The chemicals and drugs lexion is compiled from three resources namely UMLS Metathesaurus, DrugBank and PharmGKB. The disease lexicon is compiled from UMLS Metathesaurus.
+
+DrugDict: The project includes Java programs to compile the chemicals and drugs lexicon from UMLS Metathesaurus, DrugBank and PharmGKB. While license is required to downloade the resource file from UMLS Meatathesaurus and PharmGKB, DrugBank is freely available. 
+
+RelatGold: Many expert-curated resources for relationships between various concepts are available. RelatGold projects are developed to compile such relationships to provide a consistent list of relationships from the available resources. The disease-drug relationship is compiled from National Drug File - Reference Terminology (NDF-RT) and Comparative Toxicogenomics Database (CTD). The drug-gene relationships is compiled from CTD, DrugBank and PharmGKB. The gene-disease relationship is compiled from CTD and PharmGKB. The gene-pathway relationship is compiled from Reactome, Biocarta and Gene Set Enrichment Analysis (GSEA).      
+
+RelatMap: The project includes Java programs to achieve various relationship mapping such as disease-disease, disease-drug, and gene-drug at the sentence-level of PubMed abstracts. The gene-disease relationship mapping is achieved at abstract lelvel. The approach used is the simple co-occurrence of the concepts at the sentence/abstract level. 
+
