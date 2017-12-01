@@ -1,7 +1,8 @@
 Project Title: Gene2DrugAssociationGoldStandard
 
 
-Introduction: Gene2DrugAssociationGoldStandard project is meant to extract gene-drug associations from three resources, namely Comparative Toxicogenomics Database (CTD), DrugBank and PharmGKB. The project also compiles a unique list of associations from all resources.  
+Introduction: 
+The Gene2DrugAssociationGoldStandard project is meant to extract gene-drug associations from three resources, namely Comparative Toxicogenomics Database (CTD), DrugBank and PharmGKB. The project also compiles a unique list of associations from all resources.  
 
 
 Prerequisites: The resource files should be downloaded from CTD, DrugBank and PharmGKB.
