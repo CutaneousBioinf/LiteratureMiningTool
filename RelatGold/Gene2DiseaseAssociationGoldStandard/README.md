@@ -1,16 +1,16 @@
 Project Title: Gene2DiseaseAssociationGoldStandard
 
 
-Introduction: Gene2DiseaseAssociationGoldStandard project is meant for extracting gene-disease associations from two resources namely Comparative Toxicogenomics Database (CTD) and PharmGKB. The project also compiles a unique list of associations from both resources.  
+Introduction: The Gene2DiseaseAssociationGoldStandard project is meant for extracting gene-disease associations from two resources, namely Comparative Toxicogenomics Database (CTD) and PharmGKB. The project also compiles a unique list of associations from both resources.  
 
 
-Prerequisites: The resource files can be downloaded from CTD, and PharmGKB. While the resource from CTD is freely available, the resource from PharmGKB requires license and can be obtained by contacting PharmGKB team. We use Homo_sapiens.gene_info file from Entrez Gene for identifying gene symbols associated with Human. The file can be 
-downloaded from ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/Mammalia/. 
+Prerequisites: The resource files can be downloaded from CTD and PharmGKB. While the resource from CTD is freely available, the resource from PharmGKB requires a license and can be obtained by contacting the PharmGKB team. We use Homo_sapiens.gene_info file from Entrez Gene for identifying gene symbols associated with Human.
+The file can be downloaded from: ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/Mammalia/. 
 
 
 ---- RUN IN AN IDE ----
 
-The entire project should be pulled into Java IDE, such as eclipse. The execution of the project starts from main method within each package.
+The entire project should be pulled into a Java IDE, such as Eclipse. The execution of the project starts from the main method within each package.
 
 
 ---- COMPILE AND RUN ON THE COMMAND LINE ----
@@ -22,5 +22,5 @@ Java version used for development: JavaSE-1.8
 
 Authors: Kalpana Raja
 
-Affiliation: Department of Dermatology, University of Michigan, Ann arbor 48019, MI, USA
+Affiliation: Department of Dermatology, University of Michigan, Ann Arbor 48019, MI, USA
 
