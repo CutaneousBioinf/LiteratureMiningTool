@@ -1,7 +1,7 @@
 Project Title: Gene2DiseaseAssociationGoldStandard
 
 
-Introduction: The Gene2DiseaseAssociationGoldStandard project is meant for extracting gene-disease associations from two resources, namely Comparative Toxicogenomics Database (CTD) and PharmGKB. The project also compiles a unique list of associations from both resources.  
+Introduction: The Gene2DiseaseAssociationGoldStandard project is meant for extracting gene-disease associations from two resources, namely the Comparative Toxicogenomics Database (CTD) and PharmGKB. The project also compiles a unique list of associations from both resources.  
 
 
 Prerequisites: The resource files can be downloaded from CTD and PharmGKB. While the resource from CTD is freely available, the resource from PharmGKB requires a license and can be obtained by contacting the PharmGKB team. We use Homo_sapiens.gene_info file from Entrez Gene for identifying gene symbols associated with Human.
