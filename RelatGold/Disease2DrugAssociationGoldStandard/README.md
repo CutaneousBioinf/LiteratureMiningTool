@@ -7,9 +7,8 @@ The Disease2DrugAssociationGoldStandard project is meant to extract disease-drug
 
 Prerequisites: The resource files should be downloaded from CTD and NDF-RT. While CTD provides free access to download the entire data, downloading the data from NDF-RT bioportal is challenging. Alternatively, we can downloaded NDF-RT data available within UMLS Metathesaurus, a collection of biomedical concepts from around 200 dictionaries. In addition to the resource files, this project requires UMLS Metathesaurus to map unique concept identifier (CUI) to disease name and our own chemicals/drugs dictionary to map the customized ID to chemical/drug name.
 
-Downloading and installation of UMLS Metathesaurus: https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/.
-
-*NOTE: this requires a license. Please refer to https://github.com/CutaneousBioinf/LiteratureMiningTool/ConceptMap/ for processing of UMLS Metathesaurus.
+Downloading and installation of UMLS Metathesaurus requires a license: https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/. 
+Please refer to https://github.com/CutaneousBioinf/LiteratureMiningTool/ConceptMap/ for processing of UMLS Metathesaurus.
 
 Chemicals/drugs lexicon is compiled from three resources, namely UMLS Metathesaurus, DrugBank and PharmGKB. 
 Please refer to: https://github.com/CutaneousBioinf/LiteratureMiningTool/DrugDict/.  
