@@ -38,13 +38,13 @@ Step 3: Retrieval of citations with gene and disease (based on MeSH).
 
 Step 4: Mapping (path: src/edu/uom/med/geneDiseaseMapper/)
 
-Disease mapping 
-### To assign disease names for all PMIDs: 
+Disease mapping: 
+To assign disease names for all PMIDs: 
 
 							javac PubMedDiseaseMapper.java
 							java PubMedDiseaseMapper INPUT_FOLDER OUTPUT_FILE INPUT_FILE
 
-### To filter PubMed to Disease mapping for the list of PMIDs with up to 5 genes:
+To filter PubMed to Disease mapping for the list of PMIDs with up to 5 genes:
 							
 							javac PubMedDiseaseMapper1.java
 							java PubMedDiseaseMapper1 NPUT_FILE1 INPUT_FILE2 OUTPUT_FILE
