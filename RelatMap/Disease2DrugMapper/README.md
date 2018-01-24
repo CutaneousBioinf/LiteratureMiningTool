@@ -6,7 +6,8 @@ Introduction: The Disease2DrugMapper project is meant to map diseases, chemicals
 
 Prerequisites: 
 
-** Disease lexicon and chemical/drug lexicon are required to run the project. Disease lexicon can be generated from UMLS Metathesaurus by using semantic types related to diseases (refer to ConceptMap:UMLSMetathesaurusCompiler for related Java codes). NOTE: Please refer to https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/ for license requirements, download and installation of UMLS Metathesaurus.
+** Disease lexicon and chemical/drug lexicon are required to run the project. Disease lexicon can be generated from UMLS Metathesaurus by using semantic types related to diseases (refer to ConceptMap:UMLSMetathesaurusCompiler for related Java codes). 
+NOTE: Please refer to https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/ for license requirements, download and installation of UMLS Metathesaurus.
 
 ** Chemical/drug lexicon is required to run the project. The lexicon can be compiled from three resources, namely UMLS Metathesaurus, DrugBank, and PharmGKB (refer to DrugDict:DrugsDictionaryCompiler and ConceptMap:UMLSMetathesaurusCompiler for related Java codes). 
 
