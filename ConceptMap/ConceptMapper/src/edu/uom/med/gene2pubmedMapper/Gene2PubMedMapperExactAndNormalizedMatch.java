@@ -20,9 +20,9 @@ import edu.uom.med.gene2pubmedMapper.Gene2PubMedMapperExactAndNormalizedMatch.Pa
 /**
  * Project maps gene name, official symbol or gene ID present in PubMed abstracts. We use a simple string matching
  * approach for mapping. However, the authors mention gene names in various morphological forms and thus, simple
- * string matching approach will not be suitable always. We implement a set of normalization rules for gene name
+ * string matching approach will not always be suitable. We implement a set of normalization rules for gene name
  * normalization prior to mapping in the sentences. The gene2pubmed resource from NCBI is used to get gene 
- * annotations for each PubMed abstracts and mapping is carried out based on this annotation
+ * annotations for each PubMed abstracts and mapping is carried out based on this annotation.
  * 
  * 
  * @author Kalpana Raja
