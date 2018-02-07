@@ -3,12 +3,12 @@ Project Title: ConceptMapper
 
 Introduction: The project is meant for mapping concepts such as chemicals/drugs, diseases and genes in a sentence.  
 
-Prerequisites: The project requires gene2pubmed resource from NCBI for gene mapping. It requires chemical/drug lexicon for chemicals/drugs mapping. Please refer to DrugDict project for generating one. It requires disease lexicon for disease mapping. Please refer to RelatMap:DiseaseDiseaseMapper project for generating one. 
+Prerequisites: The project requires gene2pubmed resource from NCBI for gene mapping. It also requires chemical/drug lexicon for chemicals/drugs mapping. Please refer to the DrugDict project for generating one. Furthermore, the project requires disease lexicon for disease mapping. Please refer to the RelatMap:DiseaseDiseaseMapper project for generating one. 
 
 
 ---- RUN IN AN IDE ----
 
-The entire project should be pulled into Java IDE, such as eclipse. The execution starts with the respective java file (Please see below for details). 
+The entire project should be pulled into a Java IDE, such as Eclipse. The execution starts with the respective java file (Please see below for details). 
 
 
 ---- COMPILE AND RUN ON THE COMMAND LINE ----
@@ -36,6 +36,6 @@ Output: See data folder for sample output file for each concept mapping.
 
 Java version used for development: JavaSE-1.8
 
-Authors: Kalpana Raja PhD
+Authors: Kalpana Raja, PhD
 
-Affiliation: Department of Dermatology, University of Michigan, Ann arbor 48019, MI, USA
+Affiliation: Department of Dermatology, University of Michigan, Ann Arbor 48109, MI, USA
