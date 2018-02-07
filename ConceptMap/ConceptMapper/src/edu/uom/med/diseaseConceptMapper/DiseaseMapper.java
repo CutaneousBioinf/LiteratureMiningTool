@@ -12,7 +12,7 @@ import edu.mayo.nlp.qa.DiseaseAnswerer;
 import edu.nu.nlp.conceptExtractor.DiseaseFinder;
 
 /**
- * Project is meant to map the occurrence of disease mentions in sentences from PubMed articles. It uses a cutomized 
+ * Project is meant to map the occurrence of disease mentions in sentences from PubMed articles. It uses a customized 
  * disease lexicon previously compiled from UMLS Metathesaurus (please refer UMLSMetathesaurusCompiler project). The
  * project uses MedTagger from Mayo clinic for mapping. It filters sentences mapped with only one disease. 
  * 
