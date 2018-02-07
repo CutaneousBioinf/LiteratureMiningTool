@@ -3,7 +3,7 @@ Project Title: ConceptMapper
 
 Introduction: The project is meant for mapping concepts such as chemicals/drugs, diseases and genes in a sentence.  
 
-Prerequisites: The project requires gene2pubmed resource from NCBI for gene mapping. It also requires chemical/drug lexicon for chemicals/drugs mapping. Please refer to the DrugDict project for generating one. Furthermore, the project requires disease lexicon for disease mapping. Please refer to the RelatMap:DiseaseDiseaseMapper project for generating one. 
+Prerequisites: The project requires the gene2pubmed resource from NCBI for gene mapping. It also requires a chemical/drug lexicon for chemicals/drugs mapping. Please refer to the DrugDict project for generating one. Furthermore, the project requires a disease lexicon for disease mapping. Please refer to the RelatMap:DiseaseDiseaseMapper project for generating one. 
 
 
 ---- RUN IN AN IDE ----
