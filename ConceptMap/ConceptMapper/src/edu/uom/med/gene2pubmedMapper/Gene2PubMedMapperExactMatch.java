@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 /**
  * Project maps gene name, official symbol or gene ID present in PubMed abstracts. We use a simple string matching
  * approach for mapping. The gene2pubmed resource from NCBI is used to get gene annotations for each PubMed 
- * abstracts and mapping is carried out based on this annotation
+ * abstracts and mapping is carried out based on this annotation.
  * 
  * @author Kalpana Raja
  *
@@ -133,7 +133,7 @@ public class Gene2PubMedMapperExactMatch {
 	}
 	
 	/**
-	 * Method maps the gene name, official symbol or ID in PubMed sentences
+	 * Method maps the gene name, official symbol or ID in PubMed sentences.
 	 * 
 	 * @param sentences
 	 * @param geneCount
