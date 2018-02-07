@@ -14,7 +14,7 @@ import edu.nu.nlp.conceptExtractor.InterventionFinder;
 /**
  * Project maps chemical and drug mentions in each sentence from PubMed abstract. The project involves many 
  * preprocessing steps such as citation retrieval using EUtilites, filtration of PMIDs with up to 5 genes annotations
- * usig gene2pubmed resource from NCI and customized chemicals and drugs dictionary from three resources
+ * using gene2pubmed resource from NCI and customized chemicals and drugs dictionary from three resources
  * namely UMLS Metathesaurus, DrugBank and PharmGKB. We also combine MedTagger from Mayo clinic for mapping purposes.
  * 
  * 
