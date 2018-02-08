@@ -27,8 +27,8 @@ import org.apache.lucene.store.FSDirectory;
  * Project takes one or more PMIDs and uses them to retrieve PubMed abstracts from the local version of PubMed database. 
  * The retrieved articles are processed to change the abbreviations to the original expanded name and to segment the 
  * PubMed abstracts into individual sentences. We use abbreviation expansion algorithm from our previous study for 
- * converting abbreviations to the expanded name and have incorporated the respective script in this project. Each 
- * sentence from an abstract is assigned with PMID. This helps to map the sentence back to the abstract from which it is
+ * converting abbreviations to the expanded name and have incorporated the respective script into this project. Each 
+ * sentence from an abstract is assigned with a PMID. This helps to map the sentence back to the abstract from which it is
  * being derived.
  * 
  * 
