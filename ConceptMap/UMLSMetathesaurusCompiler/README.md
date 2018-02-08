@@ -15,7 +15,7 @@ The execution of the project starts from the wrapper class, UMLSMetathesaurusCom
 
 ---- COMPILE AND RUN ON THE COMMAND LINE ----
 
-The following commands are used to process UMLS Metathesaurus. 
+The following commands are used to process UMLS Metathesaurus: 
 						
 		javac UMLSMetathesaurusCompiler.java
 		java UMLSMetathesaurusCompiler MRCONSO_FILE_PATH MRSTYL_FILE_PATH 
