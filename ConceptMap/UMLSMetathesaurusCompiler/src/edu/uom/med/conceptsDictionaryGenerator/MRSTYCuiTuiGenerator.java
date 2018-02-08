@@ -8,9 +8,9 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 
 /** 
- * The MRSTYCuiTuiGenerator program implements an application that extracts and groups unique 
+ * The MRSTYCuiTuiGenerator program implements an application that extracts and groups the unique 
  * concept identifier (CUI), semantic type identifier (TUI), and semantic type of each concept 
- * in MRSTY.RRF file within UMLS Metathesaurus. 
+ * in the MRSTY.RRF file within UMLS Metathesaurus. 
  * 
  * @author Kalpana Raja and Troy Cao
  *
