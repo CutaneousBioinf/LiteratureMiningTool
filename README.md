@@ -1,4 +1,4 @@
-LiteratureMiningTools is a collection of text-ming projects to support the challenges in biomedical domain. 
+LiteratureMiningTools is a collection of text-mining projects designed to support the challenges in the biomedical domain. 
 
 
 ConceptMap: The project includes Java programs for processing UMLS Metathesaurus, PubMed retrieval and mapping of biomedical concepts such as genes, drugs and diseases in unstructured text. For mapping the genes, our approach uses gene2pubmed from NCBI. This resource annotates genes for PubMed ID (PMID). The mapping is carried out in two stages: (i) exact mapping where the gene name/alias/symbol matches exactly between the resource and gene mention in the text; (ii) mapping by normalizing the gene name/aliases when variations such as case (e.g. caspace 3 vs. CASPASE 3), and presence of extra characters (e.g. IL 7 vs. IL-7), are observed. Mapping of drugs and diseases is achieved with dictionary lookup. The chemicals and drugs lexion is compiled from three resources namely UMLS Metathesaurus, DrugBank and PharmGKB. The disease lexicon is compiled from UMLS Metathesaurus.
