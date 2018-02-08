@@ -8,8 +8,8 @@ import java.io.PrintWriter;
 
 /** 
  * The MRCONSOPreferredVocabularyGenerator program implements an application that extracts 
- * concepts that are in English and are labeled preferred from MRCONSO.RRF file within 
- * UMLS Metathesaurus  
+ * concepts in English that are labeled preferred from the MRCONSO.RRF file within 
+ * UMLS Metathesaurus.  
  * 
  * @author Kalpana Raja and Troy Cao
  *
